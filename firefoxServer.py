@@ -61,5 +61,5 @@ application=Application([
 
 if __name__ == "__main__":
 	server = HTTPServer(application)
-	server.listen(5000)
+	server.listen(80)
 	IOLoop.current().start()
