@@ -61,5 +61,5 @@ application=Application([
 
 if __name__ == "__main__":
 	server = HTTPServer(application)
-	server.listen(5000)
+	server.listen(os.environ.get("PORT", 5000))
 	IOLoop.current().start()
